@@ -3,7 +3,9 @@ Downloading and Cleaning the Data:
 1) Download the Data
 2) Unzip data
 
+
 Meanings:
+
 
 activityId - the ID of the test subject
 
@@ -17,7 +19,9 @@ TidySet - new tidy set
 
 MeanAndStd - the mean and standard deviation and the corresponding activityID and subjectID
 
+
 Measurements used:
+
 
 tBodyAccMeanX
 
@@ -179,6 +183,7 @@ fBodyBodyGyroJerkMagMeanFreq
 
 
 Activity description:
+
 
 WALKING = assigned value 1: subject was walking during the test
 
