@@ -31,7 +31,7 @@ mrg_test = cbind(y_test, subject_test, x_test)
 AllInOne = rbind(mrg_train, mrg_test)
 
 
-# 2. Extracts only the measurements on the mean and standard deviation for each measurement. 
+# 2. Extracts the mean and standard deviation for each measurement. 
 
 # Read all the values that are available.
 colNames = colnames(AllInOne)
@@ -55,7 +55,7 @@ TidySet <- aggregate(. ~subjectId + activityId, setWithActivityNames, mean)
 TidySet <- TidySet[order(TidySet$subjectId, TidySet$activityId),]
 
 
-# 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
+# 5. Creates an independent tidy data set with the average of each variable for each activity and each subject (in txt format). 
 
 write.table(TidySet, "TidySet.txt", row.name=FALSE)
 
